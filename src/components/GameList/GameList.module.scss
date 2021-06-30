@@ -1,0 +1,9 @@
+@import '../../sass/variables';
+.game-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  position: absolute;
+  top: 15rem;
+  margin-left: 5%;
+}

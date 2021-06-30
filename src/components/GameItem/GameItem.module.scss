@@ -1,0 +1,59 @@
+@import '../../sass/variables';
+
+.game-card {
+  width: 25vw;
+  height: 27vh;
+  background-color: $bg-green;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  width: auto;
+}
+
+.game-img {
+  height: auto;
+  width: auto;
+  margin-right: 1rem;
+}
+.game-description {
+  color: $description-color;
+}
+.gil {
+  font-weight: bold;
+}
+.game-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.controller-img {
+  height: 7rem;
+  width: 10rem;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.add-btn {
+  background-color: $bg-black;
+  border: none;
+  color: $btn-white;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2rem;
+  margin: 2rem 0 1rem 0rem;
+  width: 70%;
+}

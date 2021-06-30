@@ -1,0 +1,25 @@
+@import '../../sass/variables';
+
+.nav-bar-container {
+  background-color: $bg-black;
+  color: $btn-white;
+  display: flex;
+  align-items: center;
+  left: 0;
+}
+
+.mobile {
+  margin-left: 10rem;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,19 @@
+@import '../../sass/variables';
+
+.routing-btn {
+  background-color: $deep-green;
+  border: none;
+  color: $btn-white;
+  padding: 10px 27px;
+  width: 25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2rem;
+}
+.back-btn {
+  @extend .routing-btn;
+  width: 8rem;
+  background-color: $bg-black;
+}

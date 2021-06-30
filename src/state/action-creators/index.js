@@ -1,17 +1,17 @@
-export const depositMoney = (amount) => {
+export const fetchGames = (games) => {
   return (dispatch) => {
     dispatch({
-      type: 'deposit',
-      payload: amount,
+      type: 'fetch-games',
+      payload: games,
     })
   }
 }
 
-export const withdrawMoney = (amount) => {
+export const basketAction = (games) => {
   return (dispatch) => {
     dispatch({
-      type: 'withdraw',
-      payload: amount,
+      type: 'basket-games',
+      payload: games,
     })
   }
 }

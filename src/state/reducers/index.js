@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
-import accountReducer from './accountReducer'
+import gamesReducer from './gamesReducer'
+import basketReducer from './basketReducer'
 
 const reducers = combineReducers({
-  account: accountReducer,
+  games: gamesReducer,
+  basket: basketReducer,
 })
 
 export default reducers

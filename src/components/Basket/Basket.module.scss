@@ -1,0 +1,43 @@
+@import '../../sass/variables';
+.basket {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: $bg-green;
+  width: 30vw;
+  color: $bg-black;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.continue-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-item {
+  color: #4a5d50;
+}
+.items-container {
+  height: 40rem;
+}
+.no-items-container {
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem 0 2rem;
+  font-weight: bold;
+  font-size: x-large;
+  h5 {
+    color: #4a4a49;
+  }
+  p {
+    color: $bg-black;
+  }
+}

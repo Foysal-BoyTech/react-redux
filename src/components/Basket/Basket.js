@@ -36,13 +36,7 @@ function Basket() {
         </div>
       ) : null}
 
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
+      <div className={styles['continue-btn']}>
         <RoutingButton text="Continue" />
       </div>
     </div>

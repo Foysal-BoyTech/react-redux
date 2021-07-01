@@ -13,7 +13,6 @@ function App() {
   const [games, setGames] = useState([])
   const [basketList, setBasketList] = useState([])
   const [totalGil, setTotalGil] = useState(0)
-  const [cardOpacity, setCardOpacity] = useState({ opacity: 1 })
 
   useEffect(() => {
     setGames(items)
@@ -22,6 +21,7 @@ function App() {
   const addGameToBasket = (item) => {
     setBasketList((prevState) => [...prevState, item])
   }
+
   const checkList = (item) => {
     const newId = []
     basketList.forEach(({ id }) => {
@@ -30,7 +30,6 @@ function App() {
 
     if (!newId.includes(item.id)) {
       addGameToBasket(item)
-      setCardOpacity({ opacity: 0 })
     }
   }
 
@@ -61,7 +60,6 @@ function App() {
           basketList,
           deleteItem,
           totalGil,
-          cardOpacity,
         }}
       >
         <Switch>

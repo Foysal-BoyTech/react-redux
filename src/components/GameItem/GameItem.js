@@ -8,7 +8,7 @@ import '../../sass/layout.scss'
 import styles from './GameItem.module.scss'
 
 function GameItem({ game }) {
-  const { checkList, cardOpacity } = useContext(GameContext)
+  const { checkList } = useContext(GameContext)
 
   if (game) {
     return (
@@ -27,11 +27,10 @@ function GameItem({ game }) {
               </p>
             </div>
             <button
-              opacity={cardOpacity}
               className={styles['add-btn']}
               onClick={() => checkList(game)}
             >
-              Add to List
+              Add to Basket
             </button>
           </div>
         </div>

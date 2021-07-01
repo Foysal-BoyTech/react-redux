@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
 
+import Home from './components/Home/Home'
 import Library from './components/Library/Library'
 import NavBar from './components/NavBar/NavBar'
 
 import items from './items'
-
-import Home from './components/Home/Home'
 
 export const GameContext = React.createContext(null)
 
@@ -40,18 +39,16 @@ function App() {
     setBasketList(newList)
   }
 
-  const gilCounter = () => {
-    let gilNum = 0
-    basketList.forEach((game) => {
-      gilNum += game.gil
-    })
-    return gilNum
-  }
-
   useEffect(() => {
-    const gilNum = gilCounter()
-    setTotalGil(gilNum)
-  }, [basketList.length])
+    const gilCounter = () => {
+      let gilNum = 0
+      basketList.forEach((game) => {
+        gilNum += game.gil
+      })
+      return gilNum
+    }
+    setTotalGil(gilCounter)
+  }, [basketList])
 
   return (
     <div className="xanda-react-trial">

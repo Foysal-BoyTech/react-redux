@@ -22,7 +22,7 @@ function ItemsInLibrary({ game, deleteItem }) {
               <p className={styles['gil-in-library']}>{game.gil} Gil</p>
             </div>
           </div>
-          <div onClick={() => deleteItem(game)}>
+          <div className={styles['bin']} onClick={() => deleteItem(game)}>
             <img
               src={bin}
               style={{ height: '40%', width: '40%' }}

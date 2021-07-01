@@ -22,13 +22,15 @@ function ItemsInBasket({ game }) {
         <img src={game.image.default} className={styles['basket-img']} alt="" />
         <div className={styles['basket-game-info']}>
           <div className={styles['title-gil']}>
-            <h3>{game.title}</h3>
+            <div className={styles['title']}>
+              <h3>{game.title}</h3>
+            </div>
             <div className={styles['price']}>
               <img src={coins} height="15px" width="15px" alt="" />
               <p className={styles['gil-in-basket']}>{game.gil} Gil</p>
             </div>
           </div>
-          <div onClick={() => deleteItem(game)}>
+          <div className={styles['bin']} onClick={() => deleteItem(game)}>
             <img
               style={{ heigth: '40%', width: '40%' }}
               src={bin}

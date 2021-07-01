@@ -5,10 +5,8 @@
   height: 10vh;
   display: flex;
   flex-direction: row;
-  align-items: left;
   position: relative;
-  margin-top: 0.5rem;
-  padding: 0.5rem;
+  margin-bottom: 1rem;
 }
 .border {
   @extend .basket-item-container;
@@ -16,36 +14,37 @@
 }
 
 .basket-img {
-  height: 100%;
+  height: 70%;
   width: 4rem;
+  align-self: center;
 }
 
 .basket-game-info {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-self: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 1rem 0 1rem;
+  margin-left: 1rem;
 }
 
 .title-gil {
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
-.bin {
-  height: 10px;
-  width: 15px;
+  height: 60%;
 }
 
 .price {
   display: flex;
   width: 10rem;
   align-items: center;
+  height: 2rem;
 }
 
 .gil-in-basket {
   font-weight: bold;
   margin-left: 0.6rem;
+}
+.bin {
+  align-self: center;
 }
